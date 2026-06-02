@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Music App</title>
+
+  <!-- アイコン -->
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <!-- アプリっぽく -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <style>
+    body{
+      background:url('bg.jpg');
+      background-size:cover;
+      color:white;
+      text-align:center;
+      padding-top:120px;
+      font-family:sans-serif;
+    }
+
+    .box{
+      background:rgba(0,0,0,0.6);
+      width:300px;
+      margin:auto;
+      padding:30px;
+      border-radius:20px;
+      backdrop-filter:blur(10px);
+    }
+
+    audio{
+      width:100%;
+    }
+  </style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<h1>My Music</h1>
+
+<p>Favorite Song</p>
+
+<audio controls>
+  <source src="song.mp3">
+</audio>
+
+</div>
+
+</body>
+</html>
