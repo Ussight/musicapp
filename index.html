@@ -9,16 +9,15 @@
 
 <meta name="apple-mobile-web-app-capable" content="yes">
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
 
 body{
 margin:0;
 height:100vh;
 
-background:url('bg.jpg');
-background-size:cover;
-background-repeat:no-repeat;
-background-position:center;
+background:#121212;
 
 display:flex;
 justify-content:center;
@@ -28,28 +27,50 @@ font-family:sans-serif;
 color:white;
 }
 
-.box{
-width:300px;
+.player{
 
-padding:30px;
-padding-bottom:50px;
+width:320px;
 
-background:rgba(0,0,0,0.5);
+background:#181818;
+
+border-radius:25px;
+
+padding:25px;
+
+box-shadow:0 0 30px rgba(0,0,0,0.5);
+
+text-align:center;
+}
+
+.cover{
+width:220px;
+height:220px;
+
+margin:auto;
 
 border-radius:20px;
 
-backdrop-filter:blur(10px);
+background:url('bg.jpg');
+background-size:cover;
+background-position:center;
 
-text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,0.5);
+}
 
-overflow:hidden;
+h1{
+font-size:28px;
+margin-top:25px;
+margin-bottom:10px;
+}
+
+p{
+color:#b3b3b3;
+margin-bottom:25px;
 }
 
 audio{
 width:100%;
 height:50px;
-display:block;
-margin-top:20px;
 }
 
 </style>
@@ -58,11 +79,13 @@ margin-top:20px;
 
 <body>
 
-<div class="box">
+<div class="player">
 
-<h1>My Music</h1>
+<div class="cover"></div>
 
-<p>Favorite Song</p>
+<h1>Favorite Song</h1>
+
+<p>My Music App</p>
 
 <audio controls>
 <source src="song.mp3">
