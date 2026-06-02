@@ -4,35 +4,41 @@
 <head>
   <title>My Music App</title>
 
-  <!-- アイコン -->
   <link rel="apple-touch-icon" href="icon.png">
 
-  <!-- アプリっぽく -->
   <meta name="apple-mobile-web-app-capable" content="yes">
 
-  <style>
-    body{
-      background:url('bg.jpg');
-      background-size:cover;
-      color:white;
-      text-align:center;
-      padding-top:120px;
-      font-family:sans-serif;
-    }
+<style>
 
-    .box{
-      background:rgba(0,0,0,0.6);
-      width:300px;
-      margin:auto;
-      padding:30px;
-      border-radius:20px;
-      backdrop-filter:blur(10px);
-    }
+body{
+  background:url('bg.jpg');
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+  height:100vh;
+  margin:0;
 
-    audio{
-      width:100%;
-    }
-  </style>
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-family:sans-serif;
+}
+
+.box{
+  background:rgba(0,0,0,0.5);
+  padding:30px;
+  border-radius:20px;
+  width:300px;
+  backdrop-filter:blur(10px);
+  text-align:center;
+}
+
+audio{
+  width:100%;
+}
+
+</style>
 
 </head>
 
